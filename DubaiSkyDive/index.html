@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skydive Dubai</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Left side of the navbar -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Experiences Dropdown -->
+                    <li class="nav-item dropdown position-relative">
+                        <a class="nav-link dropdown-toggle main-dropdown" href="#" id="navbarDropdownExperiences"
+                            role="button">
+                            Experiences
+                        </a>
+                    </li>
+
+                    <!-- Advanced Coaching Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle main-dropdown" href="#" id="navbarDropdownCoaching"
+                            role="button">
+                            Advanced Coaching
+                        </a>
+                    </li>
+
+                    <!-- School Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle main-dropdown" href="#" id="navbarDropdownSchool"
+                            role="button">
+                            School
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Center logo -->
+            <a class="navbar-brand mx-auto" href="#">
+                <img src="../../LOGO.png" alt="Skydive Dubai Logo" style="height: 40px;">
+            </a>
+
+            <!-- Right side of the navbar -->
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Special Projects</a>
+                    </li>
+                </ul>
+
+                <!-- Search icon -->
+                <button class="btn search-icon-btn ms-2"><i class="fas fa-search"></i></button>
+
+                <!-- Book Now button -->
+                <a href="#" class="btn btn-danger ms-2 rounded-0">Book Now</a>
+            </div>
+
+            <!-- Navbar toggler for small screens -->
+            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Secondary Navbar -->
+    <div class="secondary-navbar bg-dark text-center">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#">Tandem Skydive</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#">Gyrocopter Flight</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#">InFlight Dubai</a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const mainDropdowns = document.querySelectorAll('.main-dropdown');
+        const secondaryNavbar = document.querySelector('.secondary-navbar');
+
+        // Function to show the secondary navbar
+        const showSecondaryNavbar = () => {
+            secondaryNavbar.style.display = 'block';
+            setTimeout(() => {
+                secondaryNavbar.style.opacity = '1';
+                secondaryNavbar.style.transform = 'translateY(0)';
+            }, 10);
+        };
+
+        // Function to hide the secondary navbar
+        const hideSecondaryNavbar = () => {
+            secondaryNavbar.style.opacity = '0';
+            secondaryNavbar.style.transform = 'translateY(-10px)';
+            setTimeout(() => {
+                secondaryNavbar.style.display = 'none';
+            }, 300);
+        };
+
+        // Add event listeners to each main dropdown item
+        mainDropdowns.forEach(item => {
+            item.addEventListener('mouseenter', showSecondaryNavbar);
+            item.addEventListener('mouseleave', hideSecondaryNavbar);
+        });
+
+        // Ensure secondary navbar also hides when mouse leaves it
+        secondaryNavbar.addEventListener('mouseenter', showSecondaryNavbar);
+        secondaryNavbar.addEventListener('mouseleave', hideSecondaryNavbar);
+
+    </script>
+</body>
+
+</html>
