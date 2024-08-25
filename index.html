@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skydive Dubai</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-----------------Navbar-------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown position-relative">
+                        <a class="nav-link dropdown-toggle main-dropdown" data-key="navbar_experiences" href="#"
+                            id="navbarDropdownExperiences" role="button">
+                            Experiences
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle main-dropdown" href="#" id="navbarDropdownCoaching"
+                            role="button">
+                            Advanced Coaching
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle main-dropdown" href="#" id="navbarDropdownSchool"
+                            role="button">
+                            School
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a class="navbar-brand mx-auto" href="#">
+                <img src="../../LOGO.png" alt="Skydive Dubai Logo" style="height: 40px;">
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Special Projects</a>
+                    </li>
+                </ul>
+
+                <button class="btn search-icon-btn ms-2"><i class="fas fa-search"></i></button>
+                <a href="#" class="btn btn-danger ms-2 rounded-0">Book Now</a>
+            </div>
+
+            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="secondary-navbar bg-dark text-center">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link text-light" data-key="tandem_skydive" href="#">Tandem Skydive</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#">Gyrocopter Flight</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#">InFlight Dubai</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--------------Hero Section---------------->
+    <section>
+        <img src="/Spotlight.png" class="img1" alt="" />
+
+        <h1 class="h1-style">
+            THE WORLD'S MOST SOUGHT AFTER <br />
+            SKYDIVING EXPERIENCE
+        </h1>
+    </section>
+    <!--------------Cards Section---------------->
+    <section class="cards-section">
+        <div class="left-column">
+            <div class="card card-1">
+                <img src="./person3-removebg-preview.png" alt="Card Image">
+                <h5 class="card-title">Tandem Skydive</h5>
+                <div class="card-info">
+                    <p class="card-text">Experience the thrill of a lifetime...</p>
+                    <p class="card-price">From AED 1,199</p>
+                    <a href="#" class="btn btn-danger ms-2 rounded-0">Learn More</a>
+                </div>
+            </div>
+            <div class="card card-2">
+                <img src="./skydive-person1-removebg-preview.png" alt="Card Image">
+                <h5 class="card-title">Gyrocopter Flight</h5>
+                <div class="card-info">
+                    <p class="card-text">Fly up to 1,500ft...</p>
+                    <p class="card-price">From AED 1,199</p>
+                    <a href="#" class="btn btn-danger ms-2 rounded-0">Learn More</a>
+                </div>
+            </div>
+            <div class="card card-3">
+                <img src="./plane.png" alt="Card Image">
+                <h5 class="card-title">Advanced Coaching</h5>
+                <div class="card-info">
+                    <p class="card-text">Take your skills to the next level...</p>
+                    <p class="card-price">From AED 2,199</p>
+                    <a href="#" class="btn btn-danger ms-2 rounded-0">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="card card-4">
+                <img src="./person2-removebg-preview.png" alt="Card Image">
+                <h5 class="card-title">InFlight Dubai</h5>
+                <div class="card-info">
+                    <p class="card-text">Indoor skydiving experience...</p>
+                    <p class="card-price">From AED 999</p>
+                    <a href="#" class="btn btn-danger ms-2 rounded-0">Learn More</a>
+                </div>
+            </div>
+            <div class="card card-5">
+                <img src="./person5-removebg-preview.png" alt="Card Image">
+                <h5 class="card-title">Skydive School</h5>
+                <div class="card-info">
+                    <p class="card-text">Learn from the best instructors...</p>
+                    <p class="card-price">From AED 3,999</p>
+                    <a href="#" class="btn btn-danger ms-2 rounded-0">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <button id="toggleLang" class="btn btn-danger">Switch to Arabic</button>
+    </section>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+    <script>
+        const mainDropdowns = document.querySelectorAll('.main-dropdown');
+        const secondaryNavbar = document.querySelector('.secondary-navbar');
+
+        const showSecondaryNavbar = () => {
+            secondaryNavbar.style.display = 'block';
+            setTimeout(() => {
+                secondaryNavbar.style.opacity = '1';
+                secondaryNavbar.style.transform = 'translateY(0)';
+            }, 10);
+        };
+
+        const hideSecondaryNavbar = () => {
+            secondaryNavbar.style.opacity = '0';
+            secondaryNavbar.style.transform = 'translateY(-10px)';
+            setTimeout(() => {
+                secondaryNavbar.style.display = 'none';
+            }, 300);
+        };
+
+        mainDropdowns.forEach(item => {
+            item.addEventListener('mouseenter', showSecondaryNavbar);
+            item.addEventListener('mouseleave', hideSecondaryNavbar);
+        });
+
+        secondaryNavbar.addEventListener('mouseenter', showSecondaryNavbar);
+        secondaryNavbar.addEventListener('mouseleave', hideSecondaryNavbar);
+
+    </script>
+    <script>
+        document.getElementById('toggleLang').addEventListener('click', function () {
+            const isArabic = this.innerText.includes('Arabic');
+            fetch(isArabic ? 'ar.json' : 'en.json')
+                .then(response => response.json())
+                .then(data => {
+                    document.querySelectorAll('[data-key]').forEach(el => {
+                        const key = el.getAttribute('data-key');
+                        el.innerText = data[key] || el.innerText;
+                    });
+                    this.innerText = isArabic ? 'Switch to English' : 'Switch to Arabic';
+                })
+                .catch(error => console.error('Error loading language file:', error));
+        });
+    </script>
+</body>
+
+</html>
